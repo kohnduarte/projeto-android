@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/idroid.otf') format('opentype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #83E1AD;
+    margin: 0;
+}
+
+:root { /* declarar variáveis CSS globais */
+    --cor01: #39CC7A;
+    --cor02: #307B52;
+}
+
+                  /* CABEÇALHO */
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    box-shadow: 0px 0px 10px 0px #00000096;
+    /*margin: -8px -8px 0px -8px;*/
+    
+}
+
+header h1 {
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 0;
+    text-shadow: 2px 2px 0px #0000002e;
+    
+    
+}
+
+header p {
+    margin-top: -20px;
+    padding: 0px 10px;
+    text-shadow: 1px 1px 0px #0000002e;
+}
+
+header a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    /*margin-left: 20px;*/
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+header a:hover {
+    background-color: #2FA866;
+    color: var(--cor02);
+}
+
+main a:focus {
+    text-transform: uppercase;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: var(--cor01);
+}
+
+main a:active {
+    background-color: pink;
+}
+
+nav {
+    text-align: left;
+    /*background-color: bisque;*/
+    padding: 10px;
+    
+}
+
+             /* FIM DO CABEÇALHO */
+
+             
+             /* CONTEÚDO PRINCIPAL */
+
+
+
+main h1, main h2 {
+    font-family: 'headings', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #1A6038;
+
+}
+
+main {
+    background-color: #fff;
+    /*width: 80%;*/
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 0px 0px 10px 10px;
+    /*margin-top: -22px;*/
+    margin-top: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px #00000096;
+    line-height: 1.6; /* a melhor maneira de especificar a altura da linha é com um valor sem unidade. Dessa forma, a altura da linha dos filhos de 'main' será sempre calculada com base no tamanho da fonte deles. Ou seja, a herança será esse valor '1.6', que será multiplicado aos tamanhos das fontes de cada um dos seus filhos. Se a unidade for colocada (ex: 1.6em / 160%), a herança não será esse valor, e sim o resultado final, isto é, todos os elementos filhos teriam a mesma altura da linha, não importando o tamanho de suas fontes. */
+}
+
+h2 {
+    background-image: linear-gradient(to right, #c4ebd5, transparent);
+    padding-left: 10px;
+}
+
+#honemain {
+    margin-top: 0;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+#dandroids {
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+}
+
+#irina {
+    display: block;
+    margin: auto;
+    width: 100%;
+    /*max-width: 800px;*/
+}
+
+#bugdroid {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+#vid {
+    display: block;
+    margin: auto;
+    width: 90%;
+    /*max-width: 560px;*/
+}
+
+#divid {
+    background-color: #1A6038;
+    margin: 0px -25px 0px -25px;
+    padding: 15px 0px 15px 0px;
+}
+
+#endmain {
+    margin-bottom: 0;
+}
+
+                   /* SECTION */
+
+section {
+    /*width: 100%;*/  /* 'box-sizing: content-box;' por padrão */
+    background-color: #C5EBD6;
+    margin: auto;
+    margin-top: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #00000084;
+}
+
+#introsec {
+    background-color: #2FA866;
+    color: #fff;
+    font-weight: bold;
+    margin: -15px -15px 0px -15px;
+    padding: 10px;
+    text-indent: 0px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+#endsec {
+    margin: 0;
+}
+
+ul {
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'; /* aqui não é necessário remover o marcador padrão, a propriedade 'list-style-type' faz uma substituição. */
+}
+
+.items {
+    text-decoration: underline;
+    color: #000;
+    font-weight: normal;
+}
+
+li::before { /* para esse conteúdo se tornar um marcador personalizado, antes é necessário remover o marcador padrão. */
+
+    /*content: '\2714';
+    font-weight: bold;
+    padding-right: 10px;*/
+}
+
+main a {
+    color: #1A6038;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a::after {
+    content: '\1F517';
+    padding-left: 0px; /* é uma maneira de criar espaço entre o conteúdo inserido e o conteúdo do elemento */
+}
+
+                   
+
+                 /* RODAPÉ */
+
+footer {
+    background-color: #1A5C38;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 16px 0px 0px 0px;
+    
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+                 
+
+
+
+                /* GERAL */
+
+span {
+    color: #1A6038;
+    font-weight: bold;
+}
+
+
+
