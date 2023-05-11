@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fonts/idroid.otf') format('opentype'), url('../fonts/idroid.ttf') format('truetype'), url('../fonts/idroid.woff') format('WOFF');
+}
+
+:root { /* :root {} = html {} */
+    --cor01: #c1eed4;
+    --cor02: #84E1AD;
+    --cor03: #3CD983;
+    --cor04: #398f5e;
+    --cor05: #1A5C38;
+    --font-título: 'idroid', Georgia, 'Times New Roman', Times, serif;
+    --font-destaque: 'Bebas Neue', Georgia, 'Times New Roman', Times, serif;
+    --font-normal: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor02);
+}
+
+                  /* CABEÇALHO */
+
+header {
+    background: url('../images/android-150.png') no-repeat scroll 0% 23%, url('../images/android-150.png') no-repeat scroll 100% 23% ,linear-gradient(to bottom, var(--cor03), var(--cor05));
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    box-shadow: 0px 0px 10px 0px #00000096;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 9px;
+    border-radius: 3px;
+}
+
+header a:hover {
+    background-color: var(--cor03);
+    color: var(--cor04);
+    transition-duration: .5s;
+}
+
+nav {
+    text-align: left;
+}
+
+header > h1 {
+    margin-top: 0;    
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #0000002e;
+}
+
+header > p {
+    font: 1.4em var(--font-destaque);
+    margin-top: -20px;
+    text-shadow: 2px 2px 0px #0000002e;
+}
+
+             /* FIM DO CABEÇALHO */
+
+main {
+    background-color: #fff;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #00000096;
+    border-radius: 0px 0px 10px 10px;
+}
+
+article h2:first-child {
+    margin-top: 0;
+}
+
+.endp {
+    margin-bottom: 0;
+}
+
+h2, h3 {
+    font-family: var(--font-título);
+    font-weight: normal;
+    color: var(--cor05);
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    font-size: 1.5em;
+    padding: 4px 4px 4px 10px;
+}
+
+main p {
+    font: 1em/1.6 var(--font-normal);
+    text-align: justify;
+    text-indent: 25px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+}
+
+main a:hover {
+    color: var(--cor03);
+}
+
+main a::after{
+    content: '\1F517';
+}
+
+/* estilizando links de acordo com seu estado:
+   :link
+   :visited
+   :focus
+   :hover
+   :active */
+
+img.resp {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+img.img2 {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+}
+
+span.destaque {
+    color: var(--cor05);
+    font-weight: bold;
+}
+
+                   /* VÍDEO */
+
+        /* esses 2 elementos precisam ter algum ancestral que tenha uma largura máxima definida e esteja centralizado. No caso desse documento, o elemento 'main' contém essas declarações */
+
+div.video {
+    background-color: var(--cor05);
+    position: relative; /* Um elemento com esse posicionamento permanece no fluxo do documento e pode ser deslocado em relação a si mesmo. Esse deslocamento não afeta a posição dos outros elementos e, já que ele permanece no fluxo do documento, o espaço que ele ocupava antes de ser deslocado permanece reservado. */
+    padding-bottom: 58%;
+}
+
+iframe {
+    position: absolute; /* remove o elemento do fluxo do documento e permite que ele seja posicionado em relação ao seu ancestral posicionado mais próximo. A posição final é definida pelas propriedades 'top - right - bottom - left'. */
+    width: 96%;
+    height: 94%;
+    top: 3%;
+    left: 2%;
+}
+
+
+            /* CONTEÚDO PERIFÉRICO */
+
+aside {
+    background-color: var(--cor01);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 0px #00000084;
+    margin-top: 16px;
+}
+
+ul {
+    list-style-type: '\2714\00A0'; /* \2714 - \1F5F8 */
+    font-family: var(--font-normal);
+    column-count: 2;
+}
+
+li {
+    padding-left: 6px;
+    margin-bottom: 5px;
+}
+
+.list {
+    text-decoration: underline;
+}
+
+aside p:first-child {
+    margin-top: 0;
+    background-color: var(--cor04);
+    color: #fff;
+    font-weight: bold;
+    margin: -15px -15px 16px -15px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 9px;
+    text-indent: 0;
+}
+
+                  /* RODAPÉ */
+
+footer {
+    background-color: var(--cor05);
+    margin-top: 16px;
+    padding: 10px;
+    font-family: var(--font-normal);
+}
+
+footer > p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor03);
+    text-decoration: underline;
+}
