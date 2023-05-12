@@ -142,17 +142,17 @@ main p {
     max-width: 300px;
 }
 
-#vid {
-    display: block;
-    margin: auto;
+iframe {
+    position: absolute;
     width: 90%;
-    /*max-width: 560px;*/
+    height: 90%;
 }
 
 #divid {
     background-color: #1A6038;
     margin: 0px -25px 0px -25px;
-    padding: 15px 0px 15px 0px;
+    padding-bottom: 56%;
+    position: relative;
 }
 
 #endmain {
