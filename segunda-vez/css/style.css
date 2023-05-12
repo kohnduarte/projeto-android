@@ -32,6 +32,10 @@ header {
     text-align: center;
     font-family: var(--font-destaque);
     box-shadow: 0px 0px 10px 0px #00000096;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 header a {
@@ -74,6 +78,7 @@ main {
     padding: 20px;
     box-shadow: 0px 0px 10px 0px #00000096;
     border-radius: 0px 0px 10px 10px;
+    margin-top: 199px;
 }
 
 article h2:first-child {
