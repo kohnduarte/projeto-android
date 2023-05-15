@@ -8,3 +8,5 @@ Foi ótimo, um BELO treino!
 <a href="https://kohnduarte.github.io/projeto-android/primeira-vez/index.html" target="_blank">Projeto Android</a>
 
 <a href="https://kohnduarte.github.io/projeto-android/segunda-vez/android.html" target="_blank">Segunda versão</a>
+
+<img src="segunda-vez\images\android-150.png" alt="">
