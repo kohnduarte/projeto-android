@@ -10,3 +10,5 @@ Foi ótimo, um BELO treino!
 <a href="https://kohnduarte.github.io/projeto-android/segunda-vez/android.html" target="_blank">Segunda versão</a>
 
 <img src="segunda-vez\images\android-150.png" alt="">
+
+<link rel="stylesheet" href="css/style.css">
