@@ -3,7 +3,7 @@ Projeto Android criado no capítulo 17 do curso de HTML e CSS
 
 Eu fiz esse desafio duas vezes. Na primeira vez, construí a página exatamente como havia sido proposto. Já na segunda, resolvi mudar um pouquinho.
 
-<p>Foi ótimo, um BELO treino!</p>
+Foi ótimo, um BELO treino!
 
 <a href="https://kohnduarte.github.io/projeto-android/primeira-vez/index.html" target="_blank">Projeto Android</a>
 
@@ -11,4 +11,4 @@ Eu fiz esse desafio duas vezes. Na primeira vez, construí a página exatamente 
 
 <img src="segunda-vez\images\android-150.png" alt="">
 
-<link rel="stylesheet" href="css/style.css">
+
