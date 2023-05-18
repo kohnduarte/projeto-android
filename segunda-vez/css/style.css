@@ -26,7 +26,7 @@ body {
                   /* CABEÇALHO */
 
 header {
-    background: url('../images/android-150.png') no-repeat scroll 0% 23%, url('../images/android-150.png') no-repeat scroll 100% 23% ,linear-gradient(to bottom, var(--cor03), var(--cor05));
+    background: url('../images/android-150.png') no-repeat scroll 0% 10%, url('../images/android-150.png') no-repeat scroll 98% 10% ,linear-gradient(to bottom, var(--cor03), var(--cor05));
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -82,7 +82,7 @@ main {
 }
 
 article h2:first-child {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .endp {
@@ -158,15 +158,17 @@ span.destaque {
 div.video {
     background-color: var(--cor05);
     position: relative; /* Um elemento com esse posicionamento permanece no fluxo do documento e pode ser deslocado em relação a si mesmo. Esse deslocamento não afeta a posição dos outros elementos e, já que ele permanece no fluxo do documento, o espaço que ele ocupava antes de ser deslocado permanece reservado. */
-    padding-bottom: 58%;
+    padding-bottom: 60%;
+    margin: 0px -20px 0px -20px;
 }
 
 iframe {
     position: absolute; /* remove o elemento do fluxo do documento e permite que ele seja posicionado em relação ao seu ancestral posicionado mais próximo. A posição final é definida pelas propriedades 'top - right - bottom - left'. */
     width: 96%;
     height: 94%;
-    top: 3%;
-    left: 2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
