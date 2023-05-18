@@ -146,14 +146,15 @@ iframe {
     position: absolute;
     width: 94%;
     height: 90%;
-    top: 5%;
-    left: 3%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div {
     background-color: #1A6038;
     margin: 0px -25px 0px -25px;
-    padding-bottom: 56%;
+    padding-bottom: 63%;
     position: relative;
 }
 
